@@ -1,6 +1,7 @@
-ruby spell-correct
+spell-correct
 ==================
-
+Ruby code fork from : https://github.com/cloudhead/spell-correct 
+[
 My implementation of Peter Norvig's python spell-corrector, found here: http://norvig.com/spell-correct.html. 
 
 Focus is on conciseness, not performance.
@@ -8,3 +9,15 @@ Focus is on conciseness, not performance.
 I provided a .txt file to train it, called holmes.txt; it's all the sherlock holmes books concated together. For better results, download http://norvig.com/big.txt which contains a million words or so..
 
 Note that the training material cannot be a dictionary, as it must help the corrector figure out which words are the most frequently used.
+]
+
+==Perl solution==
+Read words from a dictionary file named 'dict.txt' and check the iput word list, if miss-spelled words found ,output a suggestion word;
+Usage: perl checkSpellAndGiveSuggestions.pl "That is quitee the extravagent armchir"
+Output:
+Spelling: quitee -> quite
+Spelling: extravagent -> extravagant
+Spelling: armchir -> armchair
+
+Many improvement needed !
+
